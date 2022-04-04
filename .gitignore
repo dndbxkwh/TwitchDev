@@ -1,2 +1,4 @@
-**/__pycache__
-TwitchDevTest.py
+*
+!.gitignore
+!TwitchDev/__init__.py
+!setup.py
