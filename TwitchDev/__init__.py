@@ -68,7 +68,7 @@ class API():
   #   return requests.request('GET','https://api.twitch.tv/helix/extensions/transactions',headers=self.headers)
 
   def GetChannelInformation(self, broadcaster_id):
-    return requests.request('GET','https://api.twitch.tv/helix/channels',{'broadcaster_id':broadcaster_id},headers=self.headers)
+    return requests.request('GET','https://api.twitch.tv/helix/channels',params={'broadcaster_id':broadcaster_id},headers=self.headers)
 
   # def ModifyChannelInformation(self):
   #   return requests.request('PATCH','https://api.twitch.tv/helix/channels',headers=self.headers)

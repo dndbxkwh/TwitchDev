@@ -2,7 +2,7 @@ import setuptools
 
 setuptools.setup(
   name="TwitchDev",
-  version="0.0.2",
+  version="0.0.4",
   author="dndbxkwh",
   author_email="dndbxkwh@gmail.com",
   description="TwitchDev",
