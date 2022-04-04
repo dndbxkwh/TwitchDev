@@ -1,6 +1,6 @@
 import json, re, requests
 
-class Auth():
+class AUTH():
 
   # def OAuthImplicitCodeFlow(self):
   #   return requests.request('GET','https://id.twitch.tv/oauth2/authorize')
@@ -347,9 +347,6 @@ class API():
     return list(map(lambda x : x['id'], self.GetUsers(login=list(login)).json()['data']))
 
 class GQL():
-
-  def __init__(self):
-    self.headers = {'Client-id': "kimne78kx3ncx6brgo4mv6wki5h1ko"}
 
   def PlaybackAccessToken(self, login="", vodID=""):
     return requests.request('POST','https://gql.twitch.tv/gql',data=json.dumps({"operationName": "PlaybackAccessToken","extensions": {"persistedQuery": {"version": 1,"sha256Hash": "0828119ded1c13477966434e15800ff57ddacf13ba1911c129dc2200705b0712"}},"variables": {"isLive": True if login else False, "login": str(login), "isVod": True if vodID else False, "vodID": str(vodID), "playerType": "embed"}}),headers={'Client-id': "kimne78kx3ncx6brgo4mv6wki5h1ko"})
