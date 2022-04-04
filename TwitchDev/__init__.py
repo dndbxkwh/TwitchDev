@@ -34,6 +34,13 @@ class AUTH():
     if req.status_code==200:
       return requests.request('POST','https://id.twitch.tv/oauth2/revoke',data={'client_id':req.json()['client_id'],'token':token})
 
+  def reset_token(self, client_id, client_secret):
+    tokens = []
+    for i in range(50):
+      tokens.append(self.OAuthClientCredentialsFlow(client_id=client_id, client_secret=client_secret).json()["access_token"])
+    for i in tokens:
+      self.RevokingAccessTokens(client_id=client_id, token=i)
+
 class API():
 
   def __init__(self, token=None, client_id=None, client_secret=None, scope=None):
