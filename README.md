@@ -16,7 +16,6 @@
 * <code>.delete_token(self, token)</code> : 토큰을 제거합니다. (토큰을 검증하여 얻은 클라이언트id로 토큰을 제거합니다.)<br>
 * <code>.reset_token(self, client_id, client_secret)</code> : 토큰을 완전 초기화 합니다. (50개 생성 후 삭제)<br><br>
 
-
 <h2>※ <code>TwitchAPI = TwitchDev.API(token='', client_id='',client_secret='')</code></h2>
 트위치 API와 관련된 클래스 입니다.<br>
 트위치API 레퍼런스 (https://dev.twitch.tv/docs/api/reference) 를 기반으로 만들어졌습니다.<br>
