@@ -45,7 +45,7 @@
 * <code>.GetUsers(self, id=None, login=None)</code> : 유저 정보를 가져옵니다.<br>
 * <code>.GetUsersFollows(self, from_id=None, to_id=None, first=None, after=None)</code> : 유저 팔로우 팔로잉 정보를 조회합니다.<br>
 * <code>.GetVideos(self, id=None, user_id=None, game_id=None, language=None, period=None, sort=None, type=None, first=None, after=None, before=None)</code> : 비디오 정보를 조회합니다.<br>
-* <ode>.uid(self, *login)</code> : 유저 login 리스트를 유저 id 리스트로 변환해줍니다. (최대100개) 파라미터로 login이 아닌 id 를 사용하는 경우 유용합니다.<br><br>
+* <code>.uid(self, *login)</code> : 유저 login 리스트를 유저 id 리스트로 변환해줍니다. (최대100개) 파라미터로 login이 아닌 id 를 사용하는 경우 유용합니다.<br><br>
 
 <h2>※ <code>TwitchGQL = TwitchDev.GQL()</code></h2>
 트위치 GQL API 와 관련된 클래스 입니다.<br>
